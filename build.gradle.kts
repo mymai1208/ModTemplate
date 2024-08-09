@@ -47,15 +47,6 @@ java {
     withSourcesJar()
 }
 
-
-tasks.withType<JavaCompile> {
-    options.encoding = "UTF-8"
-
-    if (JavaVersion.current().isJava9Compatible) {
-        options.release = 8
-    }
-}
-
 kotlin {
     jvmToolchain(8)
 }
